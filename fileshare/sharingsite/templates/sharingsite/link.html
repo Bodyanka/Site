@@ -1,0 +1,17 @@
+{% extends 'sharingsite/base.html' %}
+{% block title %}Link{% endblock %}
+
+{% block body %}
+<div class="container-fluid songs-container">
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href=>http://127.0.0.1:8000/media/?file_link={{ file.file_link }} </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
