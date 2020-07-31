@@ -6,7 +6,7 @@ app_name = 'sharingsite'
 urlpatterns = [
 
     # /upload/
-    path('upload/', views.FileUpload.as_view(), name='upload'),
+    path('', views.FileUpload.as_view(), name='upload'),
 
     # /download/?file_link=*link*
     path('media/', views.FileDownload.as_view(), name='download'),
