@@ -32,7 +32,7 @@ class FileDownload(generic.ListView):
 
         if len(mass) == 0 or (del_time - cur_time).days < 0:
             try:
-                os.remove('C:/Users/Bogdan/PycharmProjects/Website/fileshare/media/' + str(mass[0].file_itself))
+                os.remove(os.path.join('media/', str(mass[0].file_itself)))
             except:
                 pass
             raise Http404('Wrong/empty file link, or living time is expired')
