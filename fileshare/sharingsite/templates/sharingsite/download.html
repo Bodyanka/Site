@@ -11,7 +11,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <h4>File: {{ file.file_itself }}</h4>
-                            <h4>Deleting time: {{ file.hours_to_delete }}:{{ file.minutes_to_delete }}</h4>
+                            <h4>Deleting time: {{ file.hours_to_delete }}:{{ file.minutes_to_delete }}  {{ file.cur_day }}/{{ file.cur_month }}/{{ file.cur_year }}</h4>
                             <a href="{{ file.file_itself }}" class="btn btn-primary btn-sm" role="button" download>Download</a>
                         </div>
                     </div>
